@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💰 Expense Tracker Pro</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Balance</h3>
+<p id="balance">₹0</p>
+</div>
+
+<div class="card">
+<h3>Income</h3>
+<p id="income">₹0</p>
+</div>
+
+<div class="card">
+<h3>Expense</h3>
+<p id="expense">₹0</p>
+</div>
+
+</div>
+
+<form id="form">
+
+<input
+id="title"
+placeholder="Title"
+required>
+
+<input
+id="amount"
+type="number"
+placeholder="Amount"
+required>
+
+<select id="type">
+
+<option value="income">
+Income
+</option>
+
+<option value="expense">
+Expense
+</option>
+
+</select>
+
+<select id="category">
+
+<option>Food</option>
+<option>Shopping</option>
+<option>Travel</option>
+<option>Rent</option>
+<option>Other</option>
+
+</select>
+
+<button type="submit">
+
+Add Transaction
+
+</button>
+
+</form>
+
+<div class="chart">
+
+<canvas id="pieChart"></canvas>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Title</th>
+
+<th>Category</th>
+
+<th>Amount</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="list">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
